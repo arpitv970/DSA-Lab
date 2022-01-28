@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <conio.h>
 
 // function for binary search
 void binarySearch(int arr[], int n, int key) {
