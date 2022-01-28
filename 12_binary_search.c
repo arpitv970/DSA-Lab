@@ -4,10 +4,11 @@
 void binarySearch(int arr[], int n, int key) {
     int s = 0;
     int e = n;
-    int mid = s+(e-s)/2;
+    
 
     while (s <= e)
     {
+        int mid = s+(e-s)/2;
         if (arr[mid] == key)
         {
             printf("Index of %d in given array: %d", key, mid);
@@ -20,8 +21,6 @@ void binarySearch(int arr[], int n, int key) {
         else {
             e = mid - 1;
         }
-        
-        mid = s + (e - s)/2;
     }
 }
 
